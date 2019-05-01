@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Legal Match Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="Legal Match test Project" name="description" />
+        <meta content="Legal Match Development" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="csrf-token" content="{{ csrf_token() }}" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="/assets/img/favicon.png" />
+
+        <!-- App css -->
+        <link href="/assets/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        
+        
+    </head>
+
+    <body>
+    <div id="wrapper">
+
+        <header id="masthead">
+        <div class="container">
+
+            <div class="logo pull-left">
+
+                <img src="/assets/img/logo.jpg" class="logo" alt="logo" height="50" />
+
+                <span class="logo-subtitle">Find the right lawyer now</span>
+
+            </div>
+            <!-- end logo -->
+
+            <div class="pull-right">
+
+                <ul class="header-list">
+                    <li>No fee to present your case</li>
+                    <li>Choose from lawyers in your area</li>
+                    <li>A 100% confidential service</li>
+                </ul>
+                <!-- end header-list -->
+
+            </div>
+            
+        </div>
+        </header>
+        <!-- end header -->
+
+        <div class="content">
+        <div class="container">
+
+        
+            <div class="content-wrapper">
+
+                <h2>Find a </h2>
+                <h3>Fast Free, confidential</h3>
+
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-6">
+
+                        <form class="s-form">
+                            
+                            <div class="form-group">
+                                <label class="f-18">Enter Zip Code or City</label>
+                                <div class="s-input-group">
+                                    <span class="pre-number">1</span>
+                                    <input type="text" class="form-control s-input" name="zip_code" placeholder="Does not have to be where you live" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="f-18">Choose a category</label>
+                                <div class="s-input-group">
+                                    <span class="pre-number">2</span>
+
+                                    <div class="s-dropdown-group">
+                                        <input type="text" class="form-control s-input s-dropdown" placeholder="Click to choose a legal category" />
+                                        <input type="hidden" class="s-dropdown-value-selected" name="category" value="" />
+                                        <span class="caret glyphicon glyphicon-chevron-down"></span>
+                                        <div class="s-choices">
+                                            <ul>
+                                                <li data-val="1">Family</li>
+                                                <li data-val="2">Criminal defense</li>
+                                                <li data-val="3">Business</li>
+                                                <li data-val="4">Personal Injury</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <p class="f-18">Can't find your category? <a href="#">Click here</a></p>
+
+                        </form>
+                        <!-- end form -->
+
+                    </div>
+                    <!-- end col-lg-6 -->
+
+                    <div class="col-md-12 col-lg-6">
+
+                        <div class="reviews">
+
+                            <h6>Clients Review </h6>
+
+                            <div class="review-item">
+
+                                <div class="rev-profile">
+                                    <img src="//via.placeholder.com/60x60" alt="user icon" class="rounded-icon" width="60" height="60" />
+                                    <span class="name">Mitchell M.</span>
+                                    <span class="address">Cherry Hill, NJ</span>
+                                </div>
+
+                                <div class="rev-content">
+
+                                    <span class="rev-title">Family Law</span>
+                                    <span class="stars">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+
+                                    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
+                                    <span class="btn-modal">Read Review</span>
+
+                                </div>
+
+                            </div>
+                            <!-- end review-item -->
+
+                            <div class="review-item">
+
+                                <div class="rev-profile">
+                                    <img src="//via.placeholder.com/60x60" alt="user icon" class="rounded-icon" width="60" height="60" />
+                                    <span class="name">Mitchell M.</span>
+                                    <span class="address">Cherry Hill, NJ</span>
+                                </div>
+
+                                <div class="rev-content">
+
+                                    <span class="rev-title">Family Law</span>
+                                    <span class="stars">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+
+                                    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
+                                    <span>Read Review</span>
+
+                                </div>
+
+                            </div>
+                            <!-- end review-item -->
+
+                            <div class="review-item">
+
+                                <div class="rev-profile">
+                                    <img src="//via.placeholder.com/60x60" alt="user icon" class="rounded-icon" width="60" height="60" />
+                                    <span class="name">Mitchell M.</span>
+                                    <span class="address">Cherry Hill, NJ</span>
+                                </div>
+
+                                <div class="rev-content">
+
+                                    <span class="rev-title">Family Law</span>
+                                    <span class="stars">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </span>
+
+                                    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
+                                    <span>Read Review</span>
+
+                                </div>
+
+                            </div>
+                            <!-- end review-item -->
+
+                        </div>
+                        <!-- end reviews -->
+
+                    </div>
+                    <!-- end col-lg-6 -->
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+        <!-- end content -->
+        
+        <footer id="footer" class="footer">
+        <div class="container">
+
+            <div class="footer-content">
+            <div class="row">
+            
+                <div class="col-sm-3">
+
+                    <img src="/assets/img/logo.jpg" class="logo-sm" alt="small logo" height="50" />
+
+                    <p class="m-0 text-uppercase">Find the right lawyer now</p>
+                    
+                </div>
+
+                <div class="col-sm-6">
+                    
+                    <div class="footer-links">
+
+                        <ul class="m-0 p-0">
+                            <li>
+                                <a href="#">User Agreement</a>
+                            </li>
+                            <li class="has-divider">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li class="has-divider">
+                                <a href="#">Site Map</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- end footer-links -->
+
+                    <p class="text-center">
+                        Copyright 1999-2016 LegalMatch. All rights reserved. LegalMatch®,<br>
+                        the LegalMatch logo, and the tradedress are trademarks of LegalMatch. Patents Pending.    
+                    </p>
+
+                </div>
+
+                <div class="col-sm-3">
+
+                    <div class="partners float-right">
+                        <img src="/assets/img/partner-1.jpg" />
+                        <br>
+                        <img src="/assets/img/partner-2.jpg" />
+                    </div>
+                    <!-- end partners -->
+                </div>
+
+            </div>
+            </div>
+            <!-- end footer-content -->
+
+        </div>
+        </footer>
+        <!-- end footer -->
+
+        <div class="s-modal active">
+            <div class="s-modal-dialog">
+
+                <div class="s-modal-close">
+                    <button>&times;</button>
+                </div>
+
+                <div class="s-modal-content">
+                
+                    <p class="f-18">
+                        <span class="pre-number">3</span> Which <strong>Family law</strong> issues(s) apply to your case?
+                    </p>
+
+                    <button class="btn btn-large btn-rounded centered">Find a lawyer now</button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="s-modal-bg"></div>
+
+    </div>
+    <!-- end wrapper -->
+
+    <script src="/assets/js/app.js"></script>
+
+    </body>
+</html>
