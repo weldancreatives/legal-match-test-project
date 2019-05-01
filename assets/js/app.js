@@ -16,6 +16,13 @@ var modal = {
 
                 modal.closeActive();
             }
+            else if( e.closest('.s-modal.active') ){
+
+                if( e.className == 's-modal active' ){
+                    modal.closeActive();
+                }
+            }
+          
         }
     },
 
