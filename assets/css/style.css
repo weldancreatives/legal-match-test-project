@@ -18,6 +18,13 @@ button:focus{
 label{
     font-weight: normal;
 }
+a{
+    cursor: pointer;
+}
+a:hover{
+    color: inherit;
+    transition: all .3s;
+}
 
 .text-uppercase{
     text-transform: uppercase;
@@ -27,6 +34,9 @@ label{
 }
 .text-white{
     color: #fff;
+}
+.text-dark{
+    color: #222;
 }
 .text-url{
     text-decoration: underline;
@@ -51,6 +61,9 @@ label{
 }
 .mb-0{
     margin-bottom: 0;
+}
+.mb-20{
+    margin-bottom: 20px;
 }
 .mb-30{
     margin-bottom: 30px;
@@ -93,6 +106,7 @@ label{
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    transition: all .3s;
 }
 .btn.btn-large{
     padding: 15px;
@@ -352,6 +366,9 @@ label{
     color: #fbd243;
 }
 
+.ratings span.rating{
+    color: #656565;
+}
 .ratings span.rating.full{
     color: #d89108;
 }
@@ -376,10 +393,16 @@ label{
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px 30px 30px;
+    padding: 20px 30px 40px;
     background-color: #fff;
     border-radius: 8px;
     z-index: 998;
+}
+.s-modal .s-modal-dialog.s-modal-dialog-small{
+    max-width: 500px;
+}
+.s-modal .s-modal-dialog.s-modal-dialog-large{
+    max-width: 700px;
 }
 .s-modal .s-modal-close{
     position: absolute;
@@ -413,7 +436,7 @@ label{
 
 .addcat-list-wrapper{
     display: block;
-    max-height: 100px;
+    max-height: 350px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -421,7 +444,37 @@ label{
     list-style: none;
 }
 .additional-cat-list li{
-    line-height: 25px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+
+.modal-ratings-list{
+    list-style: none;
+}
+.modal-ratings-list li{
+    position: relative;
+    margin: 3px 0;
+}
+.modal-ratings-list li .ratings{
+    position: absolute;
+    right: 0;
+}
+
+.client-review-user{
+    margin: 0 0 30px;
+}
+.client-review-user .profile-img{
+    position: absolute;
+}
+.client-review-user .profile-info{
+    padding: 15px 0 0 100px;
+}
+.client-review-user .profile-info h3{
+    font-size: 24px;
+    margin: 0;
+}
+.client-review-user .profile-info span{
+    display: block;
 }
 
 @media screen and (max-width: 990px){
