@@ -13,7 +13,7 @@ p{
 
 }
 button:focus{
-    outline: 0;
+    outline: 0 !important;
 }
 label{
     font-weight: normal;
@@ -88,6 +88,7 @@ label{
 }
 .btn{
     min-width: 250px;
+    font-weight: bold;
     background-color: #02377b;
     color: #fff;
     text-transform: uppercase;
@@ -103,6 +104,13 @@ label{
 }
 .btn.btn-rounded{
     border-radius: 30px;
+}
+.btn:hover{
+    background-color: #0e2746;
+}
+.btn:hover,
+.btn:visited{
+    color: #fff;
 }
 .pre-number{
     display: inline-block;
@@ -160,9 +168,12 @@ label{
     background-position: center bottom;
 }
 .content .content-wrapper{
-    padding: 20px 0;
+    padding: 20px 0 10px;
 }
 
+.footer{
+    padding: 30px 0;
+}
 .footer .footer-content{
     display: block;
     margin: 0 0 30px;
@@ -171,12 +182,41 @@ label{
 .footer p{
     color: #929ba4;
 }
-.footer-links ul{
+.footer .footer-links{
+    margin: 20px 0 0;
+}
+.footer .footer-links ul{
     list-style: none;
     text-align: center;
 }
-.footer-links ul li{
+.footer .footer-links ul li{
+    position: relative;
     display: inline-block;
+    padding: 0 15px;
+}
+.footer .footer-links ul li.has-divider:before{
+    position: absolute;
+    top: -4px;
+    left: -2px;
+    font-size: 18px;
+    content: ".";
+    color: #ababab;
+    line-height: 18px;
+}
+.footer .footer-links ul li a{
+    color: #ababab;
+}
+.footer .footer-links ul li a:hover{
+    color: #00296c;
+}
+.footer .partners img{
+    margin-bottom: 10px;
+}
+.footer .copyright{
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 50px 0 20px;
 }
 
 .s-form{
@@ -259,9 +299,9 @@ label{
     position: relative;
     min-height: 130px;
     color: #fff;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
     padding: 15px 0 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .reviews .review-item:last-of-type{
     border-bottom: none;
@@ -312,6 +352,10 @@ label{
     color: #fbd243;
 }
 
+.ratings span.rating.full{
+    color: #d89108;
+}
+
 .s-modal{
     display: none;
     position: fixed;
@@ -360,9 +404,54 @@ label{
     opacity: 0.6;
     z-index: 990;
 }
+.modal-checkbox-list .custom-control{
+    margin-bottom: 5px;
+}
+.modal-checkbox-list .custom-control label{
+    margin-left: 10px;
+}
 
 .addcat-list-wrapper{
     display: block;
     max-height: 100px;
+    overflow-x: hidden;
     overflow-y: auto;
+}
+.additional-cat-list{
+    list-style: none;
+}
+.additional-cat-list li{
+    line-height: 25px;
+}
+
+@media screen and (max-width: 990px){
+    .header .logo-subtitle{
+        display: block;
+    }
+    .content .s-form{
+        max-width: 100%;
+    }
+    .content .reviews{
+        float: left;
+        max-width: 100%;
+        margin: 50px 0;
+    }
+    .m-pull-left{
+        float: left !important;
+    }
+    .m-full-width{
+        width: 100%;
+    }
+    .m-text-center{
+        text-align: center;
+    }
+    .m-mt-20{
+        margin-top: 20px
+    }
+    .m-mb-10{
+        margin-bottom: 10px
+    }
+    .m-mb-30{
+        margin-bottom: 30px
+    }
 }
