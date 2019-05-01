@@ -119,6 +119,7 @@ button:focus{
     cursor: pointer;
 }
 .s-form .s-dropdown-group .s-choices{
+    display: none;
     position: absolute;
     top: 75px;
     left: 0;
@@ -214,7 +215,7 @@ button:focus{
     border: 0;
     box-shadow: none;
 }
-.s-modal-bg{
+#s-modal-bg{
     position: fixed;
     top: 0;
     left: 0;
