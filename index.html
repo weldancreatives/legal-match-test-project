@@ -23,12 +23,14 @@
     <body>
     <div id="wrapper">
 
-        <header id="masthead">
+        <header id="masthead" class="header">
         <div class="container">
 
-            <div class="logo pull-left">
+            <div class="logo-wrapper pull-left">
 
-                <img src="/assets/img/logo.jpg" class="logo" alt="logo" height="50" />
+                <a href="/" class="d-iblock">
+                    <img src="/assets/img/logo.jpg" class="logo" alt="logo" />
+                </a>
 
                 <span class="logo-subtitle">Find the right lawyer now</span>
 
@@ -37,7 +39,7 @@
 
             <div class="pull-right">
 
-                <ul class="header-list">
+                <ul class="header-list m-0 p-0">
                     <li>No fee to present your case</li>
                     <li>Choose from lawyers in your area</li>
                     <li>A 100% confidential service</li>
@@ -56,17 +58,17 @@
         
             <div class="content-wrapper">
 
-                <h2>Find a </h2>
-                <h3>Fast Free, confidential</h3>
+                <h2 class="f-light text-white mb-0">Find a Lawyer for your Legal Issue</h2>
+                <h3 class="f-medium text-white mt-5 mb-0">Fast Free, confidential</h3>
 
                 <div class="row">
 
                     <div class="col-md-12 col-lg-6">
 
-                        <form class="s-form">
+                        <form class="s-form mt-50">
                             
-                            <div class="form-group">
-                                <label class="f-18">Enter Zip Code or City</label>
+                            <div class="form-group mb-30">
+                                <label class="f-18 text-white f-medium">Enter Zip Code or City</label>
                                 <div class="s-input-group">
                                     <span class="pre-number">1</span>
                                     <input type="text" class="form-control s-input" name="zip_code" placeholder="Does not have to be where you live" />
@@ -74,20 +76,20 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="f-18">Choose a category</label>
+                                <label class="f-18 text-white f-medium">Choose a category</label>
                                 <div class="s-input-group">
                                     <span class="pre-number">2</span>
 
                                     <div class="s-dropdown-group">
-                                        <input type="text" class="form-control s-input s-dropdown" placeholder="Click to choose a legal category" />
+                                        <input type="text" class="form-control s-input s-dropdown-selector" id="select-dropdown" placeholder="Click to choose a legal category" />
                                         <input type="hidden" class="s-dropdown-value-selected" name="category" value="" />
                                         <span class="caret glyphicon glyphicon-chevron-down"></span>
-                                        <div class="s-choices">
+                                        <div class="s-choices" id="s-dropdown-choices">
                                             <ul>
-                                                <li data-val="1">Family</li>
-                                                <li data-val="2">Criminal defense</li>
-                                                <li data-val="3">Business</li>
-                                                <li data-val="4">Personal Injury</li>
+                                                <li><a href="javascript:void(0);" modal-target="modal-first" data-val="1">Family</a></li>
+                                                <li><a href="javascript:void(0);" modal-target="modal-first" data-val="2">Criminal defense</a></li>
+                                                <li><a href="javascript:void(0);" modal-target="modal-first" data-val="3">Business</a></li>
+                                                <li><a href="javascript:void(0);" modal-target="modal-first" data-val="4">Personal Injury</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -95,10 +97,11 @@
                                 </div>
                             </div>
 
-                            <p class="f-18">Can't find your category? <a href="#">Click here</a></p>
+                            <p class="f-18 mt-30 text-center text-white">Can't find your category? <a href="javascript:void(0);" class="btn-modal text-white text-url" data-target="modal-third">Click here</a></p>
 
                         </form>
                         <!-- end form -->
+
 
                     </div>
                     <!-- end col-lg-6 -->
@@ -107,7 +110,7 @@
 
                         <div class="reviews">
 
-                            <h6>Clients Review </h6>
+                            <h5 class="f-20 f-normal text-white">Clients review LegalMatch lawyers</h5>
 
                             <div class="review-item">
 
@@ -120,15 +123,15 @@
                                 <div class="rev-content">
 
                                     <span class="rev-title">Family Law</span>
-                                    <span class="stars">
+                                    <span class="ratings">
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star"></span>
                                     </span>
 
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
-                                    <span class="btn-modal">Read Review</span>
+                                    <p class="comment">"Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
+                                    <a href="javascript:void(0);" class="btn-modal read-review pull-right" data-target="modal-second">Read Review</a>
 
                                 </div>
 
@@ -139,22 +142,22 @@
 
                                 <div class="rev-profile">
                                     <img src="//via.placeholder.com/60x60" alt="user icon" class="rounded-icon" width="60" height="60" />
-                                    <span class="name">Mitchell M.</span>
-                                    <span class="address">Cherry Hill, NJ</span>
+                                    <span class="name">Joel C.</span>
+                                    <span class="address">Little Rock, AK</span>
                                 </div>
 
                                 <div class="rev-content">
 
                                     <span class="rev-title">Family Law</span>
-                                    <span class="stars">
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
+                                    <span class="ratings">
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating glyphicon glyphicon-star"></span>
                                     </span>
 
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
-                                    <span>Read Review</span>
+                                    <p class="comment">"Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
+                                    <a href="javascript:void(0);" class="btn-modal read-review pull-right" data-target="modal-second">Read Review</a>
 
                                 </div>
 
@@ -165,22 +168,22 @@
 
                                 <div class="rev-profile">
                                     <img src="//via.placeholder.com/60x60" alt="user icon" class="rounded-icon" width="60" height="60" />
-                                    <span class="name">Mitchell M.</span>
-                                    <span class="address">Cherry Hill, NJ</span>
+                                    <span class="name">Brigida R.</span>
+                                    <span class="address">Dallas, TX</span>
                                 </div>
 
                                 <div class="rev-content">
 
                                     <span class="rev-title">Family Law</span>
-                                    <span class="stars">
+                                    <span class="ratings">
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star"></span>
                                     </span>
 
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
-                                    <span>Read Review</span>
+                                    <p class="comment">"Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque sem...</p>
+                                    <a href="javascript:void(0);" class="btn-modal read-review pull-right" data-target="modal-second">Read Review</a>
 
                                 </div>
 
@@ -209,7 +212,9 @@
             
                 <div class="col-sm-3">
 
-                    <img src="/assets/img/logo.jpg" class="logo-sm" alt="small logo" height="50" />
+                    <a href="/">
+                        <img src="/assets/img/logo.jpg" class="logo-sm" alt="small logo" height="50" />
+                    </a>
 
                     <p class="m-0 text-uppercase">Find the right lawyer now</p>
                     
@@ -259,11 +264,14 @@
         </footer>
         <!-- end footer -->
 
-        <div class="s-modal active">
+
+        <!-- modals start -->
+
+        <div id="modal-first" class="s-modal">
             <div class="s-modal-dialog">
 
                 <div class="s-modal-close">
-                    <button>&times;</button>
+                    <button class="modal-close">&times;</button>
                 </div>
 
                 <div class="s-modal-content">
@@ -272,13 +280,195 @@
                         <span class="pre-number">3</span> Which <strong>Family law</strong> issues(s) apply to your case?
                     </p>
 
+                    <div class="row">
+                    
+                        <div class="col-lg-6">
+                        
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection1">
+                                <label class="custom-control-label" for="checkboxSelection1"> Adoptions</label>
+                            </div>
+                            
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection2">
+                                <label class="custom-control-label" for="checkboxSelection2"> Guardianship</label>
+                            </div>
+                            
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection3">
+                                <label class="custom-control-label" for="checkboxSelection3"> Child Custody and Visitation</label>
+                            </div>
+                            
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection4">
+                                <label class="custom-control-label" for="checkboxSelection4"> Paternity</label>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection5">
+                                <label class="custom-control-label" for="checkboxSelection5"> Child Support</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection6">
+                                <label class="custom-control-label" for="checkboxSelection6"> Separations</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection7">
+                                <label class="custom-control-label" for="checkboxSelection7"> Divorce</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkboxSelection8">
+                                <label class="custom-control-label" for="checkboxSelection8"> Spousal Support or Alimony</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                     <button class="btn btn-large btn-rounded centered">Find a lawyer now</button>
 
                 </div>
 
             </div>
         </div>
-        <div class="s-modal-bg"></div>
+        <!-- end modal-first -->
+        
+        
+        <div id="modal-second" class="s-modal">
+            <div class="s-modal-dialog">
+
+                <div class="s-modal-close">
+                    <button class="modal-close">&times;</button>
+                </div>
+
+                <div class="s-modal-content">
+                
+                    <div class="client-review">
+                        
+                        <h4 class="text-uppercase">Clients Reviews</h4>
+
+                        <div class="divider"></div>
+
+                        <div>
+                            <img src="//via.placeholder.com/60x60" alt="user icon" class="rounded-icon" width="60" height="60" />
+                            Brigida R.<br>
+                            Dallas TX
+                            Family Law
+                        </div>
+
+                        <div>
+                            Rating <small>(29 users)</small>
+
+                            <span class="ratings">
+                                <span class="rating full glyphicon glyphicon-star"></span>
+                                <span class="rating full glyphicon glyphicon-star"></span>
+                                <span class="rating full glyphicon glyphicon-star"></span>
+                                <span class="rating glyphicon glyphicon-star"></span>
+                            </span>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li>
+                                    <strong>Overall</strong>
+                                    <span class="ratings">
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating glyphicon glyphicon-star"></span>
+                                    </span>
+                                </li>
+                                <li>
+                                    Responded in a timely manner
+                                    <span class="ratings">
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating full glyphicon glyphicon-star"></span>
+                                        <span class="rating glyphicon glyphicon-star"></span>
+                                    </span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <div>
+                            <span class="ratings">
+                                <span class="rating full glyphicon glyphicon-star"></span>
+                                <span class="rating full glyphicon glyphicon-star"></span>
+                                <span class="rating full glyphicon glyphicon-star"></span>
+                                <span class="rating glyphicon glyphicon-star"></span>
+                            </span>
+
+                            by Dexter Marchall, 06/10/2016
+
+                            <p>Deb did a great job. Got my bench warrant set aside... was sure I was going to jail... phew. Judge seemed to respect her and I got what I</p>
+
+                        </div>
+
+                        <a href="javascript:void(0);" class="modal-close text-uppercase pull-right">Close</a>
+
+                    </div>
+                    <!-- end client-review -->
+
+                </div>
+
+            </div>
+        </div>
+        <!-- end modal-second -->
+        
+        
+        <div id="modal-third" class="s-modal">
+            <div class="s-modal-dialog">
+
+                <div class="s-modal-close">
+                    <button class="modal-close">&times;</button>
+                </div>
+
+                <div class="s-modal-content">
+                
+                    <div class="client-review">
+                        
+                        <h4 class="text-uppercase">Other Categories</h4>
+                        <p>Choose the category that best fits your case</p>
+
+                        <div class="addcat-list-wrapper">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+
+                                <ul class="additional-cat-list">
+                                    <li><a href="javascript:void(0);" data-val="20">Abuse (Child, Domestic, Sexual)</a></li>
+                                    <li><a href="javascript:void(0);" data-val="20">Agencies & Administration</a></li>
+                                    <li><a href="javascript:void(0);" data-val="20">Automobile (DUI, Crimes, Speeding)</a></li>
+                                    <li><a href="javascript:void(0);" data-val="20">Automobiles (Accidents, Insurance)</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="col-lg-6"></div>
+
+                        </div>
+                        </div>
+
+                    </div>
+                    <!-- end client-review -->
+
+                </div>
+
+            </div>
+        </div>
+        <!-- end modal-third -->
+
+
+        <!-- modals end -->
 
     </div>
     <!-- end wrapper -->

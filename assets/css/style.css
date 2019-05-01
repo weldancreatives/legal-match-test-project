@@ -15,12 +15,45 @@ p{
 button:focus{
     outline: 0;
 }
+label{
+    font-weight: normal;
+}
 
 .text-uppercase{
     text-transform: uppercase;
 }
+.text-center{
+    text-align: center;
+}
+.text-white{
+    color: #fff;
+}
+.text-url{
+    text-decoration: underline;
+}
+.text-muted{
+    color: #dadada;
+}
 .m-0{
     margin: 0;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.mb-30{
+    margin-bottom: 30px;
 }
 .p-0{
     padding: 0;
@@ -30,6 +63,28 @@ button:focus{
 }
 .f-18{
     font-size: 18px;
+}
+.f-20{
+    font-size: 20px;
+}
+.f-light{
+    font-weight: 300;
+}
+.f-normal{
+    font-weight: normal;
+}
+.f-medium{
+    font-weight: 500;
+}
+.d-iblock{
+    display: inline-block;
+}
+.divider{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin: 0 0 20px;
 }
 .btn{
     min-width: 250px;
@@ -51,12 +106,50 @@ button:focus{
 }
 .pre-number{
     display: inline-block;
+    font-weight: bold;
     background-color: #d68d00;
     color: #fff;
     width: 30px;
     height: 30px;
+    padding: 5px;
     border-radius: 50%;
     text-align: center;
+}
+
+.header{
+    display: block;
+    padding: 15px 0;
+}
+.header .logo-wrapper{
+    display: inline-block;
+}
+.header .logo{
+    max-width: 288px;
+}
+.header .logo-subtitle{
+    display: inline-block;
+    font-weight: bold;
+    color: #012667;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    margin: 8px;
+}
+.header .header-list{
+    list-style: none;
+}
+.header .header-list li{
+    position: relative;
+    font-weight: 500;
+    line-height: 22px;
+    padding-left: 25px;
+}
+.header .header-list li:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Glyphicons Halflings';
+    content: "\e013";
+    color: #3e9d03;
 }
 
 .content{
@@ -65,6 +158,9 @@ button:focus{
     background-image: url('/assets/img/bg.jpg');
     background-size: cover;
     background-position: center bottom;
+}
+.content .content-wrapper{
+    padding: 20px 0;
 }
 
 .footer .footer-content{
@@ -103,8 +199,8 @@ button:focus{
 }
 .s-form .s-input-group span.pre-number{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 17px;
+    left: 17px;
     z-index: 1;
 }
 .s-form .s-dropdown-group{
@@ -118,6 +214,9 @@ button:focus{
     color: #aaa;
     cursor: pointer;
 }
+.s-form .s-dropdown-group .s-dropdown-selector{
+    cursor: pointer;
+}
 .s-form .s-dropdown-group .s-choices{
     display: none;
     position: absolute;
@@ -129,18 +228,26 @@ button:focus{
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1);
     z-index: 2;
 }
+.s-form .s-dropdown-group .s-choices.open{
+    display: block;
+}
 .s-form .s-dropdown-group .s-choices ul{
     list-style: none;
     margin: 0;
     padding: 20px 15px;
 }
-.s-form .s-dropdown-group .s-choices ul li{
+.s-form .s-dropdown-group .s-choices ul li a{
+    display: block;
+    width: 100%;
     color: #777;
     padding: 5px 10px 5px 30px;
 }
+.s-form .s-dropdown-group .s-choices ul li a:hover{
+    color: #111;
+    text-decoration: none;
+}
 .s-form .s-dropdown-group .s-choices ul li:hover{
     background-color: #bcd3e3;
-    color: #111;
 }
 
 .reviews{
@@ -150,6 +257,7 @@ button:focus{
 }
 .reviews .review-item{
     position: relative;
+    min-height: 130px;
     color: #fff;
     margin: 0 0 30px;
     padding: 15px 0 20px;
@@ -162,19 +270,46 @@ button:focus{
     position: absolute;
     top: 15px;
     left: 0;
-    width: 140px;
+    width: 100px;
+    text-align: center;
     z-index: 2;
+}
+.reviews .review-item .rev-profile img{
+    margin-bottom: 8px;
 }
 .reviews .review-item .rev-profile span{
     display: block;
 }
+.reviews .review-item .rev-profile .name{
+    font-size: 13px;
+    font-weight: bold;
+}
+.reviews .review-item .rev-profile .address{
+    font-size: 11px;
+    font-weight: 500;
+    color: #dadada;
+}
 .reviews .review-item .rev-content{
     position: relative;
-    padding-left: 120px;
+    padding-left: 110px;
     vertical-align: top;
 }
-.reivews .rev-title{
+.reviews .review-item .rev-content .rev-title{
+    font-size: 12px;
     font-weight: bold;
+    margin: 0 20px 0 0;
+}
+.reviews .review-item .rev-content .comment{
+    font-size: 11px;
+    font-style: italic;
+    margin: 10px 0 5px;
+    line-height: 20px;
+    letter-spacing: .03em;
+}
+.reviews .review-item .rev-content .read-review{
+    font-size: 10px;
+    font-weight: bold;
+    color: #fbd243;
 }
 
 .s-modal{
@@ -224,4 +359,10 @@ button:focus{
     background-color: #333;
     opacity: 0.6;
     z-index: 990;
+}
+
+.addcat-list-wrapper{
+    display: block;
+    max-height: 100px;
+    overflow-y: auto;
 }

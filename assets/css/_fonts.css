@@ -2,3 +2,18 @@
     font-family: myGothamFont;
     src: url('/assets/font/gotham/Gotham-Book.otf');
 }
+@font-face {
+    font-family: myGothamFont;
+    font-weight: 300;
+    src: url('/assets/font/gotham/Gotham-Light.otf');
+}
+@font-face {
+    font-family: myGothamFont;
+    font-weight: 500;
+    src: url('/assets/font/gotham/Gotham-Medium.otf');
+}
+@font-face {
+    font-family: myGothamFont;
+    font-weight: bold;
+    src: url('/assets/font/gotham/Gotham-Bold.otf');
+}
